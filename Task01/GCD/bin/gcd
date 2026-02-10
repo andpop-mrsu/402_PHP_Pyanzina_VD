@@ -1,0 +1,18 @@
+#!/usr/bin/env php
+<?php
+
+$paths = [
+    __DIR__ . '/../../../autoload.php',
+    __DIR__ . '/../vendor/autoload.php',
+];
+
+foreach ($paths as $path) {
+    if (file_exists($path)) {
+        require_once $path;
+        break;
+    }
+}
+
+use function iambadatnicknames\GCD\Controller\startGame;
+
+startGame();

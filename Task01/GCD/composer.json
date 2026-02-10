@@ -1,0 +1,26 @@
+{
+    "name": "iambadatnicknames/gcd",
+    "type": "project",
+    "require": {
+        "wp-cli/php-cli-tools": "^0.12.7"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0"
+    },
+    "scripts": {
+        "lint": "phpcs --standard=PSR12 src/ bin/",
+        "lint-fix": "phpcbf --standard=PSR12 src/ bin/"
+    },
+    "autoload": {
+        "files": [
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Victoria Pyanzina",
+            "email": "victoria_pianzina04@mail.ru"
+        }
+    ]
+}
