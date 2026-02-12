@@ -1,0 +1,4 @@
+composer.lock
+**/vendor/
+db/database.sqlite
+.DS_Store

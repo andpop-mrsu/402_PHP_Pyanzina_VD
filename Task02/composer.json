@@ -1,0 +1,29 @@
+{
+    "name": "iambadatnicknames/gcd",
+    "type": "project",
+    "require": {
+        "php": ">=8.0",
+        "ext-sqlite3": "*"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "^4.0"
+    },
+    "scripts": {
+        "lint": "phpcs --standard=PSR12 src/ public/",
+        "lint-fix": "phpcbf --standard=PSR12 src/ public/",
+        "start": "php -S localhost:3000 -t public"
+    },
+    "autoload": {
+        "files": [
+            "src/Database.php",
+            "src/Controller.php",
+            "src/View.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Victoria Pyanzina",
+            "email": "victoria_pianzina04@mail.ru"
+        }
+    ]
+}
